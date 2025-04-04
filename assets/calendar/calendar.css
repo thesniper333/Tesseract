@@ -1,0 +1,67 @@
+.calendar-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: black;
+    position: relative;
+}
+
+.calendar-header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.month-year {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 75%;
+    width: 100%;
+    bottom: 0;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.days-grid:hover {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.day.other-month {
+    opacity: 0.5;
+}
+
+.day.today {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+}
+
+.day:active::before {
+    opacity: 1;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/img/bg.jpg') no-repeat center center/cover;
+    /* default background */
+    color: rgb(0, 0, 0);
+    font-family: Oxygen, sans-serif;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    backdrop-filter: blur(5px);
+    /* Glass effect */
+    -webkit-backdrop-filter: blur(5px);
+    /* Safari support */
+    height: 100%;
+}
+
+.col-3 {
+    height: 36vh;
+}
+
+.col-4 {
+    height: 42vh;
+    position: relative;
+}
+
+#row-1.row {
+    position: absolute;
+    top: 1em;
+    margin: auto;
+
+}
+
+#row-2.row {
+
+    position: absolute;
+    bottom: 1em;
+    margin: auto;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255);
+    /* Light white */
+    opacity: 0.8;
+}
+
+button,
+input {
+    outline: none;
+}
+
+/* 🔹 Custom Scrollbar Styling (For WebKit Browsers like Chrome, Edge) */
+*::-webkit-scrollbar {
+    width: 8px;
+    /* Vertical scrollbar width */
+    height: 8px;
+    /* Horizontal scrollbar height */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    /* Rounded edges */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    /* Rounded scrollbar */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

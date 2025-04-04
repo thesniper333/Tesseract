@@ -1,0 +1,108 @@
+/* Weather */
+#weather-widget {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    width: 100%;
+    overflow: hidden;
+}
+
+#weather-widget #location {
+    font-size: 0.8em;
+}
+
+/* 🔹 Custom Scrollbar Styling (For WebKit Browsers like Chrome, Edge) */
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7em;
+}
+
+.details p {
+    margin: 0px;
+}
+
+.weather-info {
+    opacity: 0.8;
+}
+
+.temperature {
+    opacity: 0.8;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.conditions {
+    font-size: 12px;
+}
+
+/* hourly forecast and weekly-forecast */
+#extra-info {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 60%;
+    width: 100%;
+}
+
+#extra-info:hover {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#hourly-forecast,
+#weekly-forecast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 11px;
+}
+
+#hourly-forecast .hourly-item,
+#weekly-forecast .forecast-day {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#hourly-forecast .error {
+    color: #dc3545;
+    padding: 10px;
+    background: #f8d7da;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    font-size: 1.5rem;
+}
+
+.high {
+    color: #ff9a9a;
+}
+
+.low {
+    color: #9acdff;
+}
+
+.loading {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

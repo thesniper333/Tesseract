@@ -1,0 +1,74 @@
+/* Clock */
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling the clock face */
+#clock {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    /* Glass effect */
+    -webkit-backdrop-filter: blur(5px);
+    /* Safari support */
+}
+
+/* Styling clock hands */
+#clock .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(0deg);
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+#clock .hour {
+    width: 6px;
+    height: 50px;
+}
+
+#clock .minute {
+    width: 4px;
+    height: 70px;
+}
+
+#second.second {
+    width: 2px;
+    height: 80px;
+    background: red;
+    transform-origin: bottom;
+}
+
+/* Styling the center dot */
+.center {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styling numbers on the clock */
+.number {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
