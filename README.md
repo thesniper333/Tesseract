@@ -44,11 +44,11 @@ as for videos it requires large storage capacity which is not availabe in locals
 
 ## How to Use
 1. Download All the files.
-2. In chrome go to manage extension an enable developer mode.
+2. In chrome, go to manage extension and enable developer mode.
 3. Click on the load unpacked.
 4. Select the directory where the manifest.json is present.
 5. Click on new tab and you will find it there.
 
 
-Note: I created this project alone, it was not a group project. However, I had used AIs like chatGPT and Deepseek, to increase the pace and productivity.
+Note: I created this project alone. However, I had used AIs like chatGPT and Deepseek, to increase the pace and productivity.
 
