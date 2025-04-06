@@ -27,7 +27,7 @@ It is embedded via Gmap which requires map.js script to work. It also locates th
 col-3 class which is a bootstrap grid.
 
 #### Music-Player
-It uses jiosaavn unofficial api to fetch music, it's default player controls is hidden and a customized player controls is used to work. This element is contained inside col-4 class which is a bootstrap grid.
+It uses jiosaavn unofficial api(saavn.dev by Sumit Kolhe) to fetch music, it's default player controls is hidden and a customized player controls is used to work. This element is contained inside col-4 class which is a bootstrap grid.
 
 #### To-do List
 It is created using html, css and js. This element is contained inside col-3 class which is a bootstrap grid. This element is contained inside col-4 class which is a bootstrap grid. To store the tasks it uses localstorage as they are just texts so indexedDB is not required.
