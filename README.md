@@ -1,5 +1,6 @@
 # Tesseract
 ### A Chrome Extension Dashboard Homepage.
+#### Download from Web Store: https://chromewebstore.google.com/detail/tesseract/lhkepmpoifkibpommffpgmphmibfpapb
 ## Description:
 An elegant chrome extension dashboard which incorporates several widgets like Analog clock, calendar, weather,
 Gmap, Music-Player, to-do list, stocks. Bootstrap is also used to apply quick styles, I have used bootstrap grid to contain the widgets so that it
