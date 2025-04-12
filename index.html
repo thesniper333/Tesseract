@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tesseract</title>
+        <link rel="icon" type="image/png" href="/img/logo.jpg">
+          <!-- Bootstrap Icons (for Bootstrap 4/5) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+          <!-- Bootstrap CSS (for Bootstrap 4/5) -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+          <!-- All stylesheet sheets to their corresponding elements  -->
+        <link rel="stylesheet" href="fonts/Oxygen/fonts.css">
+        <link rel="stylesheet" href="/assets/music-player/music-player.css">
+        <link rel="stylesheet" href="assets/clock/clock.css">
+        <link rel="stylesheet" href="assets/calendar/calendar.css">
+        <link rel="stylesheet" href="assets/weather/weather.css">
+        <link rel="stylesheet" href="assets/map/map.css">
+        <link rel="stylesheet" href="assets/todo/todo.css">
+        <link rel="stylesheet" href="assets/stocks/stocks.css">
+        <link rel="stylesheet" href="assets/search/search.css">
+        <link rel="stylesheet" href="assets/background-changer/bgchanger.css">
+        <link rel="stylesheet" href="css/styles.css">
+          <!-- All the script to their corresponding element -->
+        <script src="/assets/music-player/music-player.js" defer></script>
+        <script src="assets/search/search.js" defer></script>
+        <script src="assets/background-changer/bgchanger.js" defer></script>
+        <script src="assets/calendar/calendar.js"></script>
+        <script src="assets/clock/clock.js" defer></script>
+        <script src="assets/weather/weather.js" defer></script>
+        <script src="assets/todo/todo.js" defer></script>
+        <script src="assets/map/map.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+              <!-- Row 1 elements -->
+            <div class="row container-fluid text-center" id="row-1">
+                <div class="col-3">
+                    <div id="clock-container">
+                        <div id="clock"></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <div class="month-year" id="month-year">March 2023</div>
+                        </div>
+                        <div class="days-header">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        <div class="days-grid" id="days-grid"></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="weather-widget">
+                        <div id="location">Fetching location...</div>
+                        <div class="weather-info">
+                            <span class="temperature" id="temperature">--°C</span>
+                            <span class="conditions" id="conditions">--</span>
+                        </div>
+                        <div class="details">
+                            <p id="aqi">AQI: --</p>
+                            <p id="humidity">Humidity: --</p>
+                            <p id="feelsLike">Feels Like: --</p>
+                        </div>
+                        <div id="extra-info">
+                            <div id="hourly-forecast">
+                                <div class="loading">Loading hourly forecast...</div>
+                            </div>
+                            <div id="weekly-forecast">
+                                <div class="loading">Loading weekly forecast...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="map">
+                        <iframe id="mapFrame" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=0,0&z=15&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-upload-container">
+                <label for="bg-upload" class="change-bg"><i class="bi bi-image"></i></label>
+                <input type="file" id="bg-upload" accept="image/*,video/*">
+            </div>
+              <!-- Row 2 Elements -->
+            <div class="row container-fluid text-center" id="row-2">
+                <div class="col-4">
+                    <div id="music-player-container">
+                        <div id="music-search-container">
+                            <button id="back-button" style="display: none;"><i class="bi bi-arrow-left"></i></button>
+                            <input type="text" class="search-box" placeholder="Search for music...">
+                        </div>
+                        <div id="music-details" style="display: none;"></div>
+                        <div class="results"><i class="bi bi-music-note-beamed"></i></div>
+                        <div class="player">
+                            <audio id="audioPlayer" controls></audio>
+                            <div class="audio-controls" style="display: none;">
+                                <button id="playPauseBtn"></button>
+                                <input type="range" id="seekBar" value="0" min="0" step="1">
+                                <span id="currentTime"></span>/<span id="duration"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="todo-container">
+                        <div id="add-task-container">
+                            <input type="text" id="taskInput" placeholder="Add a task...">
+                            <button id="add-task"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                        <ul id="taskList">Logo might be backed up in USB</ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tradingview-widget-container">
+                        <iframe src="https://www.tradingview.com/widgetembed/?symbol=NASDAQ:AAPL&interval=D&theme=light&hide_volume=true&timezone=Etc/UTC&style=2&allow_symbol_change=true&hide_top_toolbar=true">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
