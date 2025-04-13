@@ -9,7 +9,7 @@ All of these feature's source code is given assets folder or directly in the ind
 if mentioned at their privacy policy.
 
 #### Analog Clock
-It is just a simple anal;og clock made with html, css and js. This clock
+It is just a simple analog clock made with html, css and js. This clock
 comprises numbers to mark time, it is created and embedded dynamically using js by calculating angles.
 It also has three hands for hours, minutes and seconds. Seconds hand rotates every second by a certain degree, minutes and hour
 hands depend upon seconds hand for it's rotation angle. It's style is applied from the clock.css which you will find it in the assets folder and it's
