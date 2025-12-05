@@ -7,7 +7,7 @@ async function searchMusic() {
     let resultsDiv = document.querySelector('.results');
     resultsDiv.innerHTML = 'Loading...';
 
-    let response = await fetch(`https://saavn.dev/api/search/songs?query=${encodeURIComponent(query)}`);
+    let response = await fetch(`https://saavn.sumit.co/api/search/songs?query=${encodeURIComponent(query)}`);
     let data = await response.json();
     resultsDiv.innerHTML = '';
 
@@ -23,7 +23,7 @@ async function searchMusic() {
 
 async function fetchDownloadUrl(songId) {
 
-    let response = await fetch(`https://saavn.dev/api/songs/${songId}`);
+    let response = await fetch(`https://saavn.sumit.co/api/songs/${songId}`);
     let data = await response.json();
     console.log('Song Data:', data);
 
